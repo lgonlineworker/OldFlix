@@ -1,0 +1,38 @@
+
+@media (max-width:800px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+@media (max-width:550px){
+    header nav {
+        display: none;
+    }
+    header .container{
+        justify-content: center;
+    }
+    .button{
+        width: 220px;
+    }
+    .main-movie{
+        background-position-x: right;
+
+    }
+}
+
+@media (max-width:400px) {
+    .main-movie{
+        background: linear-gradient(rgb(41, 39, 39,.50),rgba(1,1,1,.50)100%) , url('/img/capa-Titanic-mini.jpg');
+        height: 45%;
+        background-size: cover;
+    }
+}
+
+@media (min-width:800px) {
+    .description{
+        width: 60%;
+    }
+}

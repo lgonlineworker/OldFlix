@@ -1,0 +1,119 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/*Elementos base*/
+body{
+    background-color: var(--preto);
+    color: white;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2% 0 2%;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'arial black';
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    
+}
+header nav :last-child{
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Main movie style*/
+.main-movie .container{
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 80%;
+}
+
+.main-movie{
+    font-size: 18px;
+    background: linear-gradient(rgb(41, 39, 39,.50),rgba(1,1,1,.50)100%) , url('/img/capa-Titanic.jpg');
+
+    height: 45%;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .description{
+    margin-bottom:10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.main-movie .container .title{
+    margin-top: 17%;
+    margin-bottom: 2%;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.button{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin:0 5% 2% 2%;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    cursor: pointer;
+    transition: .3s ease all ;
+}
+
+.button i{
+    margin-right: 8px;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+/*Movie list style*/
+
+.movie-list{
+    margin-top: 2%;
+}
+.movie-box{
+    min-width: 200px;
+    min-height: 300px;
+   /* min-height: 100px;
+    min-width: 175px;*/
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+}
